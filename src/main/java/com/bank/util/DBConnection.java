@@ -10,9 +10,9 @@ import java.sql.SQLException;
  */
 public class DBConnection {
 
-    private static final String DB_URL  = "jdbc:mysql://localhost:3306/bank_management?useSSL=false&serverTimezone=UTC";
+    private static final String DB_URL  = "jdbc:mysql://containers-us-west-xxx.railway.app:6543/railway";
     private static final String DB_USER = "root";
-    private static final String DB_PASS = "12345";  // <-- change this
+    private static final String DB_PASS = "${{MYSQL_ROOT_PASSWORD}}";  // <-- change this
 
     static {
         try {
